@@ -18,16 +18,4 @@ public class BubbleSort<T extends Comparable<T>> extends MySort<T> {
         }
 
     }
-    public static void main(String[] args) {
-        Double[] myList = { 2.9, 3.4, 3.5,1.9};
-        for (int i = 0; i < myList.length; i++) {
-            System.out.println(myList[i] + " ");
-        }
-        System.out.println("排序后");
-        new BubbleSort<Double>().sort(myList);
-        for (int i = 0; i < myList.length; i++) {
-            System.out.println(myList[i] + " ");
-        }
-
-    }
 }

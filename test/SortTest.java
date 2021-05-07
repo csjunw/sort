@@ -5,6 +5,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import src.BubbleSort;
+import src.SelectionSort;
 
 public class SortTest {
     Double[] myList = { 2.9, 3.4, 3.5,1.9};
@@ -20,8 +21,13 @@ public class SortTest {
         new BubbleSort<Double>().sort(myList);
     }
 
+    @Test
+    public void testSelection(){
+        new SelectionSort<Double>().sort(myList);
+    }
+
     @After
-    public void AfterSort()
+    public void afterSort()
     {
         System.out.println("排序后");
 

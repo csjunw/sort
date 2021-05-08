@@ -5,6 +5,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import src.BubbleSort;
+import src.InsertionSort;
 import src.SelectionSort;
 
 public class SortTest {
@@ -24,6 +25,11 @@ public class SortTest {
     @Test
     public void testSelection(){
         new SelectionSort<Double>().sort(myList);
+    }
+
+    @Test
+    public void testInsertion(){
+        new InsertionSort<Double>().sort(myList);
     }
 
     @After
